@@ -9,7 +9,7 @@ app.use(helmet.contentSecurityPolicy({
     useDefaults: false,
     directives: {
         defaultSrc: helmet.contentSecurityPolicy.dangerouslyDisableDefaultSrc,
-        frameAncestors: ["'self'", 'https://www.w3schools.com'],
+        frameAncestors: ['https://iframe-demo-app.herokuapp.com'],
     }
 }))
 app.use(express.static(path.join(__dirname, '/build')))
