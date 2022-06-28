@@ -4,16 +4,27 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="theme-color" content="#000000"/>
-    <link rel="apple-touch-icon" href="/logo192.png"/>
     <title>CSP</title>
     <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
         .title {
-            text-align: center;
+            background: white;
+            color: green;
         }
     </style>
 </head>
 <body>
-    <p class="title">CSP app</p>
+    <div class="container">
+        <h1 class="title">CSP app</h1>
+    </div>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
 </body>
