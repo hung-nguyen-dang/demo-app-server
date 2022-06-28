@@ -9,7 +9,7 @@ app.use(helmet.contentSecurityPolicy({
     useDefaults: false,
     directives: {
         defaultSrc: helmet.contentSecurityPolicy.dangerouslyDisableDefaultSrc,
-        frameAncestors: ["'none'"],
+        frameAncestors: ["'https://www.w3schools.com'"],
     }
 }))
 app.use(express.static(path.join(__dirname, '/build')))
