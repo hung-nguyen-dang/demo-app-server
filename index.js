@@ -12,7 +12,7 @@ app.use(helmet.contentSecurityPolicy({
         frameAncestors: ['https://iframe-demo-app.herokuapp.com'],
     }
 }))
-app.use(express.static(path.join(__dirname, '/build')))
+app.use(express.static(path.join(__dirname, '/www')))
 
 const PORT = process.env.PORT
 
