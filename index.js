@@ -5,8 +5,8 @@ const path = require('path')
 
 const app = express()
 
+app.use(helmet.frameguard({ action: 'DENY' }))
 app.use(express.static(path.join(__dirname, '/build')))
-app.use(helmet.frameguard({ action: 'SAMEORIGIN' }))
 
 const PORT = process.env.PORT
 
