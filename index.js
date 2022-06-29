@@ -9,7 +9,7 @@ app.use(helmet.contentSecurityPolicy({
     useDefaults: false,
     directives: {
         defaultSrc: helmet.contentSecurityPolicy.dangerouslyDisableDefaultSrc,
-        frameAncestors: ['https://iframe-demo-app.herokuapp.com'],
+        frameAncestors: ['https://thor-demo-saleforce.herokuapp.com'],
     }
 }))
 app.use(express.static(path.join(__dirname, '/www')))
